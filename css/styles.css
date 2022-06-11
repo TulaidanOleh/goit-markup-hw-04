@@ -136,6 +136,19 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-background.jpg);
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-text {
@@ -180,6 +193,16 @@ img {
 .feature-list {
   margin-right: 30px;
 }
+
+.feature-list::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-color: var(--color-background-team);
+  margin-bottom: 30px;
+}
+
 .feature-list:last-child {
   margin-right: 0;
 }
