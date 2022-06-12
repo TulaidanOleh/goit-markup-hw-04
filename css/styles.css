@@ -95,26 +95,15 @@ img {
 .header-icon-envelope {
   width: 16px;
   height: 12px;
-  /* padding-top: 34px;
-  padding-bottom: 34px;*/
   padding-right: 10px;
-  fill: var(--color-taxt-basic);
-}
-.header-icon-envelope:hover {
-  fill: var(--color-hover);
+  fill: currentColor;
 }
 
 .header-icon-smartphone {
   width: 10px;
   height: 16px;
-
-  /* padding-top: 32px;
-  padding-bottom: 32px;*/
   padding-right: 10px;
-  fill: var(--color-taxt-basic);
-}
-.header-icon-smartphone:hover {
-  fill: var(--color-hover);
+  fill: currentColor;
 }
 
 .header-link,
@@ -211,22 +200,28 @@ img {
   padding-bottom: 94px;
 }
 
+.feature-list-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.feature-icon-back {
+  width: 270px;
+  height: 120px;
+  background-color: var(--color-background-team);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .feature-ul {
   display: flex;
 }
 
 .feature-list {
   margin-right: 30px;
-}
-
-.feature-list::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-color: var(--color-background-team);
-  margin-bottom: 30px;
-  background-image: url(../images/icons.svg#logo);
 }
 
 .feature-list:last-child {
@@ -294,7 +289,7 @@ img {
 
 .team-text {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .team-list {
@@ -321,6 +316,89 @@ img {
 .team-position {
   text-align: center;
   color: var(--color-taxt-basic);
+}
+
+.team-ul-icon {
+  display: flex;
+
+  padding-bottom: 30px;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.team-list-icon:last-child {
+  margin-right: 0;
+}
+
+.team-link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-basic);
+  color: var(--color-taxt-basic);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.team-link-icon:hover,
+.team-link-icon:focus {
+  background-color: var(--color-hover);
+  color: var(--color-basic);
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+/*--------------CLIENT--------------------*/
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-taxt-header);
+
+  margin-bottom: 50px;
+}
+
+.client-ul {
+  display: flex;
+}
+
+.client-link {
+  width: 170px;
+  height: 92px;
+  box-sizing: border-box;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-right: 30px;
+  color: var(--color-taxt-basic);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--color-hover);
+  border: 1px solid var(--color-hover);
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 /*--------------FOOTER--------------------*/
@@ -359,6 +437,67 @@ img {
 
 .logo-white {
   color: var(--color-basic);
+}
+
+.footer-ul-icon {
+  display: flex;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
+.footer-logo-address {
+  margin-right: 70px;
+}
+
+.footer-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--color-basic);
+
+  margin-bottom: 20px;
+}
+
+.footer-ul-icon {
+  display: flex;
+
+  padding-bottom: 30px;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.footer-list-icon:last-child {
+  margin-right: 0;
+}
+
+.footer-link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.footer-link-icon:hover,
+.footer-link-icon:focus {
+  background-color: var(--color-hover);
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-basic);
 }
 
 /*--------------PORTFOLIO--------------------*/
@@ -416,6 +555,11 @@ img {
 
 .portfolio-link {
   text-decoration: none;
+}
+
+.portfolio-work-list:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list-text {
