@@ -7,6 +7,7 @@
   --color-btn-focus: #188ce8;
   --color-background-team: #f5f4fa;
   --color-footer-link: rgba(255, 255, 255, 0.6);
+  --color-icon: #afb1b8;
 }
 
 body {
@@ -111,6 +112,7 @@ img {
   font-weight: 500;
 
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -338,7 +340,7 @@ img {
   width: 44px;
   height: 44px;
   background-color: var(--color-basic);
-  color: var(--color-taxt-basic);
+  color: var(--color-icon);
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -375,14 +377,19 @@ img {
   display: flex;
 }
 
+.client-list {
+  margin-right: 30px;
+}
+
 .client-link {
   width: 170px;
   height: 92px;
   box-sizing: border-box;
   border: 1px solid #afb1b8;
+  outline: transparent;
   border-radius: 4px;
-  margin-right: 30px;
-  color: var(--color-taxt-basic);
+
+  color: var(--color-icon);
 
   display: flex;
   align-items: center;
@@ -557,7 +564,8 @@ img {
   text-decoration: none;
 }
 
-.portfolio-work-list:hover {
+.portfolio-work-list:hover,
+.portfolio-work-list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
